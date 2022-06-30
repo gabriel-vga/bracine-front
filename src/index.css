@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.titulo-link:link, .titulo-link:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+body {
+  background-color: #480e31;
+  background-image: linear-gradient(#1b0d15, #80004c);
+  background-repeat: no-repeat;
+  background-size: 100% 2160px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  background-color: transparent;
+  color: white;
+  font-family: inherit;
+  font-size: 2rem;
+}
+
+.pesquisa {
+  background-color: transparent;
+  border: 2px solid #7e3d64;
+  border-radius: 50px;
+  color: white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.pesquisa:focus {
+  outline: 0;
+}
+
+header {
+  background-color: #80004c;
+  background-image: linear-gradient(to right,#41102c, #6d3a59);
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 1rem;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.filme-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filme {
+  background-color: #80004c;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0 0.1);
+  overflow: hidden;
+  margin: 1rem;
+  width: 250px;
+  position: relative;
+}
+
+.filme img {
+  max-width: 100%;
+}
+
+.filme-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.filme-info h3 {
+  margin: 0;
+}
+
+.filme-over {
+  background-color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0 0.1);
+  color: #80004c;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.filme:hover .filme-over {
+  transform: translateY(0%);
+}
+
+.filme-video-container {
+  display: block;
+  align-items: center;
+}
+
+.filme-video-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.filme-video {
+  max-height: 70%;
+  width: 99%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0 0.1);
+  outline: auto;
+}
+
+.filme-video-card{
+  background-color: #80004c;
+  background-image: linear-gradient(to right,#41102c, #6d3a59);
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0 0.1);
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  bottom: 0px;
+}
+
+.nome-filme-video{
+  display: flex;
+  justify-content: center;
+  outline: auto;
+}
+
+.sinopse-filme-video{
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  outline: auto;
+}
+
+.bloco-edicao{
+  background-color: #80004c;
+  outline: auto;
+  padding: 1rem;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0 0.1);
+  overflow: hidden;
+  width: 60%;
+}
+
+.card-edicao{align-content: space-between;}
+
+.delete{
+  cursor: pointer;
+}

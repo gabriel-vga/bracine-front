@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+main {
+    display: flex;
+    justify-content: center;
+
+
+    padding: 3rem 0;
+}
+
+.fields {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 1.2rem;
+
+    color: whitesmoke;
+
+    font-family: Poppins;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+
+    font-size: 1.2rem;
+
+    padding-left: 15px;
+}
+
+input {
+    height: 45px;
+}
+
+textarea {
+    height: 190px;
+    resize: none;
+
+    padding-top: 10px;
+}
+
+.btn-post{
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.btn-post button{
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 1.3rem;
+
+    padding: 5px 50px;
+    color: whitesmoke;
+    background-color: #0c030e;
+
+    border: 0;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+.error-message {
+    color: rgb(240, 47, 47);
+}
+
+.listaContainer{
+    background-color: white;
+    width: 100%;
+    max-width: 320px;
+    max-height: 1000px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    padding-bottom: 70px;
+}
+
+.listaContainer:last-child { height: 100%; }
+
+.lista {
+    color: #80004c;
+}
+
+.conteudo{
+    margin-left: 360px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-lista{
+    margin-left: 360px;
+    margin-top: 80px;
+    padding: 10px;
+    position: fixed;
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.subitem-lista:link, .subitem-lista:visited {
+    text-decoration: none;
+    color: #80004c;
+  }
